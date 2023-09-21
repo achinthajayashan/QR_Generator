@@ -11,16 +11,17 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <section>
-    <div>
+    <div id="mainDiv">
         <h3>QR Code Generator</h3>
         <p>Paste a URL or enter Text To Generate QR code</p>
-        <label for="txtURL">Enter URL Here</label>
+        <label for="txtURL" id="lblTxtUrl">Enter URL Here</label>
         <input type="text" name="Enter URL here" id="txtURL"><br>
-        <button type="button">Generate QR</button>
-
+        <button type="button" id="btnGenerate">Generate QR</button>
+        <img src="Suranga_Lakmal.png" alt="" id="qr">
     </div>
 </section>
 </body>
