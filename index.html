@@ -12,17 +12,21 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-<section>
     <div id="mainDiv">
         <h3>QR Code Generator</h3>
         <p>Paste a URL or enter Text To Generate QR code</p>
-        <label for="txtURL" id="lblTxtUrl">Enter URL Here</label>
-        <input type="text" name="Enter URL here" id="txtURL"><br>
-        <button type="button" id="btnGenerate">Generate QR</button>
-        <img src="Suranga_Lakmal.png" alt="" id="qr">
+<!--        <label for="txtURL" id="lblTxtUrl">Enter URL Here</label>-->
+        <div class="form">
+            <input type="text" name="Enter URL here" id="txtURL" placeholder="Enter URL or Text Here">
+            <button type="button" id="btnGenerate">Generate QR</button>
+        </div>
+        <div class="qrs">
+            <img src="Suranga_Lakmal.png" alt="" id="qr" width="200">
+        </div>
+
     </div>
-</section>
 </body>
 </html>
